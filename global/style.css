@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-padding-top: 5rem;
+}
+
+::selection {
+  background-color: #0055ffa3;
+  color: #fff;
+}
+
+main {
+  min-height: 82.5vh;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  background-image: linear-gradient(90deg, #007bff, #002783);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 200ms ease;
+}
+
+.link:hover {
+  color: #05f;
+  background-size: 100% 2px;
+}
