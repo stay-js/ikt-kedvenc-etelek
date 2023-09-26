@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://kedvenc-etelek.znagy.hu
+Sitemap: https://kedvenc-etelek.znagy.hu/sitemap.xml
