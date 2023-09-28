@@ -7,9 +7,6 @@
     <meta name="author" content="Zétény Nagy" />
     <link rel="author" href="https://znagy.hu" />
 
-    <meta name="author" content="Bottka Balázs" />
-    <meta name="author" content="K.Papp Benjámin" />
-
     <meta
       name="keywords"
       content="bmszc neumann jános informatikai technikum, njit, njszg, njszki, ikt, html, css, bootstrap, school, school project"
@@ -29,15 +26,15 @@
       content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
     />
 
-    <title>Kezdőlap - Kedvenc Ételek</title>
-    <meta property="og:title" content="Kezdőlap - Kedvenc Ételek" />
-    <meta name="twitter:title" content="Kezdőlap - Kedvenc Ételek" />
+    <title>Vörös bársony torta - Kedvenc Ételek</title>
+    <meta property="og:title" content="Vörös bársony torta - Kedvenc Ételek" />
+    <meta name="twitter:title" content="Vörös bársony torta - Kedvenc Ételek" />
 
-    <meta name="description" content="Kedvenc Ételek - IKT Projektmunka" />
+    <meta name="description" content="Vörös bársony torta - IKT Projektmunka" />
     <meta property="og:description" content="Kedvenc Ételek - IKT Projektmunka" />
     <meta name="twitter:description" content="Kedvenc Ételek - IKT Projektmunka" />
 
-    <meta property="og:url" content="https://kedvenc-etelek.znagy.hu" />
+    <meta property="og:url" content="https://kedvenc-etelek.znagy.hu/voros-barsony-torta" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -52,7 +49,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="./global/style.css" />
+    <link rel="stylesheet" href="../global/style.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
 
@@ -74,7 +71,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Főoldal</a>
+              <a class="nav-link" href="/">Főoldal</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -114,7 +111,9 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li>
-                  <a class="dropdown-item" href="/voros-barsony-torta">Vörös bársony torta</a>
+                  <a class="dropdown-item active" aria-current="page" href="/voros-barsony-torta"
+                    >Vörös bársony torta</a
+                  >
                 </li>
                 <li><a class="dropdown-item" href="/joghurt">Joghurt</a></li>
                 <li><a class="dropdown-item" href="/almas-pite">Almás pite</a></li>
@@ -128,105 +127,80 @@
     <main class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="text-center mt-5">Kedvenc Ételek</h1>
+          <h1 class="text-center mt-5">Vörös Bársony Torta</h1>
         </div>
       </div>
 
-      <section class="row pt-5 row-gap-3">
-        <div class="col-12"><h2 class="mb-0">Főételek:</h2></div>
+      <div class="row pt-5">
+        <div class="col-4">
+          <img src="../images/red-velvet.jpg" class="img-fluid rounded" alt="Vörös Bársony Torta" />
 
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <img src="https://placehold.co/600x400" class="card-img-top" alt="Milánói makaróni" />
-            <div class="card-body">
-              <h5 class="card-title">Milánói makaróni</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-              </p>
-              <a href="./milanoi-makaroni/index.html" class="btn btn-primary">Tovább</a>
-            </div>
-          </div>
+          <h2 class="fs-4 mt-4">Hozzávalók</h2>
+          <p class="mb-0">A tésztához:</p>
+          <ul>
+            <li>25 dkg liszt</li>
+            <li>1 csomag sütőpor</li>
+            <li>1 csipet só</li>
+            <li>2 evőkanál curkozatlan kakaópor</li>
+            <li>12 dkg lágy vaj</li>
+            <li>25 dkg cukor</li>
+            <li>2 egész tojás</li>
+            <li>2 dl tejföl</li>
+            <li>1 teáskanál vaniliaeszencia</li>
+            <li>1 kávéskanál szódabikarbóna</li>
+            <li>1 kávéskanál ecet</li>
+            <li>2 evőkanál piros ételfesték</li>
+          </ul>
+
+          <p class="mb-0">A krémhez:</p>
+          <ul>
+            <li>25 dkg mascarpone krémsajt</li>
+            <li>2 dl tejszín</li>
+            <li>1 evőkanál vaniliaeszencia</li>
+            <li>12 dkg porcukor</li>
+          </ul>
         </div>
 
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <img
-              src="https://placehold.co/600x400"
-              class="card-img-top"
-              alt="Roston csirkemell, rízs, tzatziki"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Roston csirkemell, rízs, tzatziki</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-              </p>
-              <a href="./roston-csirkemell/index.html" class="btn btn-primary">Tovább</a>
-            </div>
-          </div>
-        </div>
+        <div class="col-8">
+          <p>
+            Ennek a vonzó süteménynek a tésztája mélyvörös színű, amelyet általában hófehér krémmel
+            töltenek meg, és azzal is vonják be.
+          </p>
+          <p>
+            A red velvet, vagyis a vörös bársony tökéletes elnevezése a süteménynek, mert nemcsak a
+            színére utal, de tésztájának puha, selymes állagára is. Olyan sima és érzéki ízre is,
+            mint rénézésre, pedig valüjában egy vajas kevert piskóta egy kis kakaóval, amit joghurt,
+            tejföl, író vagy tejsavó gazdagít és tesz puhává, könnyedségét pedig a szódabikarbónának
+            köszönheti, ami akkor fejti ki tökéletesen a hatását a tésztában, ha egy kis ecettel
+            összekeverjük, és hagyjuk felhabzani.
+          </p>
 
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <img src="https://placehold.co/600x400" class="card-img-top" alt="Kijevi csirkemell" />
-            <div class="card-body">
-              <h5 class="card-title">Kijevi csirkemell</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-              </p>
-              <a href="./kijevi-csirkemell/index.html" class="btn btn-primary">Tovább</a>
-            </div>
-          </div>
+          <h2 class="fs-4 mt-4">Elkészítés</h2>
+          <p>
+            A tésztához a lisztet, a sót, a sütóport és a kakaóport összekeverjük, majd egy
+            keverőtálba szitáljuk. A lágy vajat egy másik tálban a cukorral habosra keverjük,
+            hozzáadjuk a vaniliaeszenciát és a tojásokat, majd simára keverjük. A tejfölben
+            elkeverjük a piros ételfestéket. A szódabikarbónát egy evőkanálba tesszük,
+            rácsöpögtetjük az ecetet, majd ha felhabzott, a lisztes keverékhez adjuk, amihez
+            hozzáöntjük a piros tejfölt is, illetve hozzákanalazzuk a tojásos-vajas keveréket, és
+            robotgéppel krémesre, simára keverjük.
+          </p>
+          <p>
+            Egy 24 centis kapcsos tortaformát kivajazunk és kilisztezünk, belesimítjuk a tésztát ls
+            180 fokos sütőbe toljuk, légkeverés mellett kb. 30 perc alatt megsütjük. A sütőből
+            kivéve hűlni hagyjuk, amikor langyosodik, akkor kivesszük a kapcsos tortaformából, és
+            rácson hagyjuk teljesen kihűlni.
+          </p>
+          <p>
+            A töltelékhez és a bevonathoz a tejszínt habbá verjük, majd a mascarponét a porcukorral
+            és a vaníliaaromával kihabosítjuk. Először két-három evőkanál tejszínhabbal kicsit
+            fellazítjuk a mascarponét, majd a többi tejszínt hozzáadva, könnyed mozdulatokkal
+            összekeverjük. A kihűlt piros piskótát lapjában három részre vágjuk, megtöltjük a
+            lapokat a három részre elosztott mascarponés krémmel, majd maradékkal kívülről is
+            bevonjuk vele. Tálalásig a hűtőben pihentetjük. Jó étvágyat kívánunk hozzá!
+          </p>
         </div>
-      </section>
-
-      <section class="row pt-5 row-gap-3">
-        <div class="col-12"><h2 class="mb-0">Desszertek:</h2></div>
-
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <img src="./images/red-velvet.jpg" class="card-img-top" alt="Vörös bársony torta" />
-            <div class="card-body">
-              <h5 class="card-title">Vörös bársony torta</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-              </p>
-              <a href="./voros-barsony-torta/index.html" class="btn btn-primary">Tovább</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <img src="https://placehold.co/600x400" class="card-img-top" alt="Joghurt" />
-            <div class="card-body">
-              <h5 class="card-title">Joghurt</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-              </p>
-              <a href="./joghurt/index.html" class="btn btn-primary">Tovább</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <img src="https://placehold.co/600x400" class="card-img-top" alt="Almás pite" />
-            <div class="card-body">
-              <h5 class="card-title">Almás pite</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-              </p>
-              <a href="./almas-pite/index.html" class="btn btn-primary">Tovább</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
 
     <footer class="footer bg-light text-muted mt-5">
