@@ -25,6 +25,5 @@ main {
 }
 
 .link:hover {
-  color: #05f;
   background-size: 100% 2px;
 }
