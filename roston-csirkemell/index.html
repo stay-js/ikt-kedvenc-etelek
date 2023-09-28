@@ -7,9 +7,6 @@
     <meta name="author" content="Zétény Nagy" />
     <link rel="author" href="https://znagy.hu" />
 
-    <meta name="author" content="Bottka Balázs" />
-    <meta name="author" content="K.Papp Benjámin" />
-
     <meta
       name="keywords"
       content="bmszc neumann jános informatikai technikum, njit, njszg, njszki, ikt, html, css, bootstrap, school, school project"
@@ -29,15 +26,15 @@
       content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
     />
 
-    <title>Kezdőlap - Kedvenc Ételek</title>
-    <meta property="og:title" content="Kezdőlap - Kedvenc Ételek" />
-    <meta name="twitter:title" content="Kezdőlap - Kedvenc Ételek" />
+    <title>Roston csirkemell, rízs, tzatziki - Kedvenc Ételek</title>
+    <meta property="og:title" content="Roston csirkemell, rízs, tzatziki - Kedvenc Ételek" />
+    <meta name="twitter:title" content="Roston csirkemell, rízs, tzatziki - Kedvenc Ételek" />
 
-    <meta name="description" content="Kedvenc Ételek - IKT Projektmunka" />
+    <meta name="description" content="Roston csirkemell, rízs, tzatziki - IKT Projektmunka" />
     <meta property="og:description" content="Kedvenc Ételek - IKT Projektmunka" />
     <meta name="twitter:description" content="Kedvenc Ételek - IKT Projektmunka" />
 
-    <meta property="og:url" content="https://kedvenc-etelek.znagy.hu" />
+    <meta property="og:url" content="https://kedvenc-etelek.znagy.hu/voros-barsony-torta" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -52,7 +49,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="./global/style.css" />
+    <link rel="stylesheet" href="../global/style.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
 
@@ -74,7 +71,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Főoldal</a>
+              <a class="nav-link" href="/">Főoldal</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -92,7 +89,7 @@
                   <a class="dropdown-item" href="/milanoi-makaroni">Milánói makaróni</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/roston-csirkemell"
+                  <a class="dropdown-item active" aria-current="page" href="/roston-csirkemell"
                     >Roston csirkemell, rízs, tzatziki</a
                   >
                 </li>
@@ -128,106 +125,81 @@
     <main class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="text-center mt-5">Kedvenc Ételek</h1>
+          <h1 class="text-center mt-5">Roston csirkemell, rízs, tzatziki</h1>
         </div>
       </div>
 
-      <section class="row pt-5 row-gap-3">
-        <div class="col-12"><h2 class="mb-0">Főételek:</h2></div>
+      <div class="row pt-5">
+        <div class="col-md-4">
+          <img
+            src="https://placehold.co/600x400"
+            class="img-fluid rounded"
+            alt="Vörös Bársony Torta"
+          />
 
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <img src="https://placehold.co/600x400" class="card-img-top" alt="Milánói makaróni" />
-            <div class="card-body">
-              <h5 class="card-title">Milánói makaróni</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-              </p>
-              <a href="/milanoi-makaroni" class="btn btn-primary">Tovább</a>
-            </div>
-          </div>
+          <h2 class="fs-4 mt-4">Hozzávalók</h2>
+          <ul>
+            <li>1 kg csirkemell</li>
+            <li>4 dl tej</li>
+            <li>só</li>
+            <li>8 szem egész bors</li>
+            <li>3 db babérlevél</li>
+            <li>3 gerezd fokhagyma</li>
+            <li>10 dkg teavaj</li>
+          </ul>
+
+          <p class="mb-0">A tzatzikihez:</p>
+          <ul class="mb-0">
+            <li>2 db kígyóuborka</li>
+            <li>só</li>
+            <li>1 pohár tejföl</li>
+            <li>1 pohár natúr joghurt</li>
+            <li>3 gerezd fokhagyma</li>
+            <li>1 csepp citromlé</li>
+            <li>olivaolaj</li>
+          </ul>
         </div>
 
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <img
-              src="https://placehold.co/600x400"
-              class="card-img-top"
-              alt="Roston csirkemell, rízs, tzatziki"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Roston csirkemell, rízs, tzatziki</h5>
-              <p class="card-text">
-                A ropogós roston sült csirkemell, illatos rízs és friss tzatziki harmonikus
-                kombinációja. Az aranyló csirkehús és a puha rízs találkozása, melyet friss tzatziki
-                saláta koronáz meg.
-              </p>
-              <a href="/roston-csirkemell" class="btn btn-primary">Tovább</a>
-            </div>
-          </div>
-        </div>
+        <hr class="d-md-none w-75 mx-auto my-5" />
 
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <img src="./images/kijevicsirkemell.png" class="card-img-top" alt="Kijevi csirkemell" />
-            <div class="card-body">
-              <h5 class="card-title">Kijevi csirkemell</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-              </p>
-              <a href="/kijevi-csirkemell" class="btn btn-primary">Tovább</a>
-            </div>
-          </div>
-        </div>
-      </section>
+        <div class="col-md-8">
+          <p>
+            A ropogós roston sült csirkemell, illatos rízs és friss tzatziki harmonikus
+            kombinációja. Az aranyló csirkehús és a puha rízs találkozása, melyet friss tzatziki
+            saláta koronáz meg.
+          </p>
 
-      <section class="row pt-5 row-gap-3">
-        <div class="col-12"><h2 class="mb-0">Desszertek:</h2></div>
-
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <img src="./images/red-velvet.jpg" class="card-img-top" alt="Vörös bársony torta" />
-            <div class="card-body">
-              <h5 class="card-title">Vörös bársony torta</h5>
-              <p class="card-text">
-                A red velvet, vagyis a vörös bársony tökéletes elnevezése a süteménynek, mert
-                nemcsak a színére utal, de tésztájának puha, selymes állagára is.
-              </p>
-              <a href="/voros-barsony-torta" class="btn btn-primary">Tovább</a>
-            </div>
-          </div>
+          <h2 class="fs-4 mt-4">Elkészítés</h2>
+          <p>
+            A csirkemellet ujjnyi vastagságú szeletekre vágjuk, majd enyhén kiklopfoljuk. A tejbe
+            tesszük a sót, az egész borsot, a babérlevelet, beletörjük a fokhagymát, és
+            belefektetjük a csirkemellszeleteket. Legalább 3-4 órára a hűtőbe tesszük.
+          </p>
+          <p>
+            Elkészítjük a salátát. Az uborkát meghámozzuk, majd nagy lyukú sajtreszelőn lereszeljük.
+            Besózzuk, majd 10-15 percre hűtőbe tesszük. Ezt követően a levét kinyomkodjuk, és egy
+            tálba tesszük. Ráborítjuk a tejfölt és a natúr joghurtot, rátörjük a fokhagymát, és
+            sóval, fehérborssal ízesítjük. Jól összekeverjük, majd 1-2 csepp ciromlevet és kevés
+            olívaolajat adunk hozzá. Tálalásig hűtőbe tesszük.
+          </p>
+          <p>
+            Amikor a hús megpácolódott, lecsepegtetjük, meghintjük egy kevés sóval, majd a
+            felhevített vajban néhány perc alatt mindkét oldalát megsütjük. 5 percre fedővel
+            lefedjük, majd ismételten mindkét oldalát addig sütjük, míg aranybarna színt nem kap.
+          </p>
+          <p>A húst melegen, párolt rizzsel és a tzatziki salátával tálaljuk.</p>
+          <p>
+            Erdeti recept:
+            <a
+              href="https://www.mindmegette.hu/tejben-vajban-csirkemell-tzatziki-salataval-es-parolt-rizzsel.recept/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link fw-bold text-primary"
+              >Mindmegette.hu (Schmidt-Huszánk Éva)</a
+            >
+          </p>
         </div>
-
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <img src="./images/joghurt.png" class="card-img-top" alt="Joghurt" />
-            <div class="card-body">
-              <h5 class="card-title">Joghurt</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-              </p>
-              <a href="/joghurt" class="btn btn-primary">Tovább</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <img src="https://placehold.co/600x400" class="card-img-top" alt="Almás pite" />
-            <div class="card-body">
-              <h5 class="card-title">Almás pite</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-              </p>
-              <a href="/almas-pite" class="btn btn-primary">Tovább</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
 
     <footer class="footer bg-light text-muted mt-5">
