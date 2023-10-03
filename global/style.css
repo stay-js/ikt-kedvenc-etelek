@@ -33,6 +33,10 @@ html {
   scroll-padding-top: 5rem;
 }
 
+body {
+  background-color: rgb(240 253 250 / 0.35);
+}
+
 ::selection {
   background-color: var(--clr-secondary);
   color: #fff;
@@ -40,6 +44,13 @@ html {
 
 main {
   min-height: 82.5vh;
+}
+
+h1 {
+  text-underline-offset: 8px;
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
+  text-decoration-color: var(--clr-secondary);
 }
 
 .link {
@@ -63,5 +74,9 @@ main {
 
 .navbar,
 .footer {
+  background-color: var(--clr-primary);
+}
+
+.dropdown-item:is(:active, .active) {
   background-color: var(--clr-primary);
 }
