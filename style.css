@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(240 253 250 / 0.35);
+}
+
+h1 {
+  text-underline-offset: 8px;
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
+  text-decoration-color: var(--clr-secondary);
+}
+
+.card {
+  border: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.card .btn {
+  width: fit-content;
+  color: #fff;
+  background-color: var(--clr-primary);
+}
+
+.card .btn:hover {
+  background-color: var(--clr-secondary);
+}
+
+.footer {
+  margin-top: 5rem;
+}
