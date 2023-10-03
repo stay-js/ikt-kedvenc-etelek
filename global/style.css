@@ -34,16 +34,16 @@ html {
 }
 
 body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 5rem;
+  min-height: 100vh;
   background-color: rgb(240 253 250 / 0.35);
 }
 
 ::selection {
   background-color: var(--clr-secondary);
   color: #fff;
-}
-
-main {
-  min-height: 82.5vh;
 }
 
 h1 {
