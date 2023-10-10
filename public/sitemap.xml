@@ -5,27 +5,27 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://kedvenc-etelek.znagy.hu/milanoi-makaroni</loc>
+  <loc>https://kedvenc-etelek.znagy.hu/foetelek/milanoi-makaroni</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://kedvenc-etelek.znagy.hu/roston-csirkemell</loc>
+  <loc>https://kedvenc-etelek.znagy.hu/foetelek/roston-csirkemell</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://kedvenc-etelek.znagy.hu/kijevi-csirkemell</loc>
+  <loc>https://kedvenc-etelek.znagy.hu/foetelek/kijevi-csirkemell</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://kedvenc-etelek.znagy.hu/voros-barsony-torta</loc>
+  <loc>https://kedvenc-etelek.znagy.hu/desszertek/voros-barsony-torta</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://kedvenc-etelek.znagy.hu/joghurt</loc>
+  <loc>https://kedvenc-etelek.znagy.hu/desszertek/joghurt</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://kedvenc-etelek.znagy.hu/almas-pite</loc>
+  <loc>https://kedvenc-etelek.znagy.hu/desszertek/almas-pite</loc>
   <priority>0.80</priority>
 </url>
 </urlset>

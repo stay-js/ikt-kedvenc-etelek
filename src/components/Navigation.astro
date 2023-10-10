@@ -1,0 +1,98 @@
+---
+type Props = {
+  path: string;
+};
+
+const { path } = Astro.props as Props;
+---
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-semibold text-light" href="/">IKT - Kedvenc Ételek {path}</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-theme="dark"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class={`nav-link text-light${path === '' ? ' active' : ''}`} href="/">Főoldal</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-light"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Főételek
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li>
+              <a
+                class={`dropdown-item${path === '/foetelek/milanoi-makaroni' ? ' active' : ''}`}
+                href="/foetelek/milanoi-makaroni">Milánói makaróni</a
+              >
+            </li>
+            <li>
+              <a
+                class={`dropdown-item${path === '/foetelek/roston-csirkemell' ? ' active' : ''}`}
+                href="/foetelek/roston-csirkemell">Roston csirkemell, rizs, tzatziki</a
+              >
+            </li>
+            <li>
+              <a
+                class={`dropdown-item${path === '/foetelek/roston-csirkemell' ? ' active' : ''}`}
+                href="/foetelek/kijevi-csirkemell">Kijevi csirkemell</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-light"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Desszertek
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li>
+              <a
+                class={`dropdown-item${
+                  path === '/desszertek/voros-barsony-torta' ? ' active' : ''
+                }`}
+                href="/desszertek/voros-barsony-torta">Vörös bársony torta</a
+              >
+            </li>
+            <li>
+              <a
+                class={`dropdown-item${path === '/desszertek/joghurt' ? ' active' : ''}`}
+                href="/desszertek/joghurt">Joghurt</a
+              >
+            </li>
+            <li>
+              <a
+                class={`dropdown-item${path === '/desszertek/almas-pite' ? ' active' : ''}`}
+                href="/desszertek/almas-pite">Almás pite</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
