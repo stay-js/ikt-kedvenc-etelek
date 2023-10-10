@@ -16,7 +16,7 @@ export const navItems = {
   deserts: [
     {
       name: 'Vörös bársony torta',
-      path: '/desszertek/voros-barsony-torta"',
+      path: '/desszertek/voros-barsony-torta',
     },
     {
       name: 'Joghurt',
