@@ -1,126 +1,41 @@
 ---
 import Layout from '~/layouts/Layout.astro';
+import { navItems } from '~/constants/navItems';
 ---
 
-<Layout path="" title="Kezdőlap" description="Kedvenc Ételek - IKT Projektmunka">
+<Layout path="" title="Kezdőlap" description="Kedvenc ételek - IKT Projektmunka">
   <main class="container">
     <div class="row" transition:name="title">
       <div class="col-12">
-        <h1 class="text-center mt-5">Kedvenc Ételek</h1>
+        <h1 class="text-center mt-5">Kedvenc ételek</h1>
       </div>
     </div>
 
-    <section class="row pt-5 row-gap-3">
-      <div class="col-12"><h2 class="mb-0">Főételek:</h2></div>
-
-      <div class="col-lg-4">
-        <div class="card h-100">
-          <img src="/images/milanoi-makaroni.jpg" class="card-img-top" alt="Milánói makaróni" />
-          <div class="card-body d-flex justify-content-between flex-column">
-            <div>
-              <h5 class="card-title">Milánói makaróni</h5>
-              <p class="card-text">
-                Izlese, fűszeres, pardicsomos darált hús áldentére főtőt makaróni ágyon, érlelt
-                reszelt parmezán sajtal dízítet!
-              </p>
-            </div>
-            <a href="/foetelek/milanoi-makaroni" class="btn mt-3">Tovább</a>
+    {
+      navItems.map(({ name, items }) => (
+        <section class="row pt-5 row-gap-3">
+          <div class="col-12">
+            <h2 class="mb-0">{name}:</h2>
           </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="card h-100">
-          <img
-            src="/images/roston-csirkemell.jpg"
-            class="card-img-top"
-            alt="Roston csirkemell, rizs, tzatziki"
-          />
-          <div class="card-body d-flex justify-content-between flex-column">
-            <div>
-              <h5 class="card-title">Roston csirkemell, rizs, tzatziki</h5>
-              <p class="card-text">
-                A ropogós roston sült csirkemell, illatos rizs és friss tzatziki harmonikus
-                kombinációja. Az aranyló csirkehús és a puha rizs találkozása, melyet friss tzatziki
-                saláta koronáz meg.
-              </p>
+          {items.map(({ name, path, image, description }) => (
+            <div class="col-lg-4">
+              <div class="card h-100">
+                <img src={image} class="card-img-top" alt={name} />
+                <div class="card-body d-flex justify-content-between flex-column">
+                  <div>
+                    <h5 class="card-title">{name}</h5>
+                    <p class="card-text">{description}</p>
+                  </div>
+                  <a href={path} class="btn mt-3">
+                    Tovább
+                  </a>
+                </div>
+              </div>
             </div>
-            <a href="/foetelek/roston-csirkemell" class="btn mt-3">Tovább</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="card h-100">
-          <img src="/images/kijevicsirkemell.png" class="card-img-top" alt="Kijevi csirkemell" />
-          <div class="card-body d-flex justify-content-between flex-column">
-            <div>
-              <h5 class="card-title">Kijevi csirkemell</h5>
-              <p class="card-text">
-                A Kijevi csirkemell egy híres és ízletes étel. Ez az étel egy különleges csirkemell
-                töltelékéből áll, amelyet ropogós bundába burkolnak, majd sütnek.
-              </p>
-            </div>
-
-            <a href="/foetelek/kijevi-csirkemell" class="btn mt-3">Tovább</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="row pt-5 row-gap-3">
-      <div class="col-12"><h2 class="mb-0">Desszertek:</h2></div>
-
-      <div class="col-lg-4">
-        <div class="card h-100">
-          <img src="/images/red-velvet.jpg" class="card-img-top" alt="Vörös bársony torta" />
-          <div class="card-body d-flex justify-content-between flex-column">
-            <div>
-              <h5 class="card-title">Vörös bársony torta</h5>
-              <p class="card-text">
-                A red velvet, vagyis a vörös bársony tökéletes elnevezése a süteménynek, mert
-                nemcsak a színére utal, de tésztájának puha, selymes állagára is.
-              </p>
-            </div>
-
-            <a href="/desszertek/voros-barsony-torta" class="btn mt-3">Tovább</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="card h-100">
-          <img src="/images/joghurt.png" class="card-img-top" alt="Joghurt" />
-          <div class="card-body d-flex justify-content-between flex-column">
-            <div>
-              <h5 class="card-title">Joghurt</h5>
-              <p class="card-text">
-                A joghurt egy tejtermék, amelyet erjesztett tejből készítenek. Ez a finom és tápláló
-                étel évszázadok óta része az emberi étrendnek, és számos kultúrában készül és
-                fogyasztják.
-              </p>
-            </div>
-            <a href="/desszertek/joghurt" class="btn mt-3">Tovább</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="card h-100">
-          <img src="/images/almas-pite.jpg" class="card-img-top" alt="Almás pite" />
-          <div class="card-body d-flex justify-content-between flex-column">
-            <div>
-              <h5 class="card-title">Almás pite</h5>
-              <p class="card-text">
-                Arany barnára sült, gondosan elkészítet, omlós tésztában illatos, fahéjas, édes és
-                egyben savanykás alma reszeléket ízlelhetünk!
-              </p>
-            </div>
-            <a href="/desszertek/almas-pite" class="btn mt-3">Tovább</a>
-          </div>
-        </div>
-      </div>
-    </section>
+          ))}
+        </section>
+      ))
+    }
   </main>
 </Layout>
 
