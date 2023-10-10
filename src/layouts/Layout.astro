@@ -2,16 +2,15 @@
 import { ViewTransitions } from 'astro:transitions';
 import Navigation from '~/components/Navigation.astro';
 import Footer from '~/components/Footer.astro';
+
 import '../styles/globals.css';
 
-type Props = {
+const { path, title, description, keywords } = Astro.props as {
   path?: string;
   title: string;
   description: string;
   keywords?: string;
 };
-
-const { path, title, description, keywords } = Astro.props as Props;
 ---
 
 <html lang="hu">
