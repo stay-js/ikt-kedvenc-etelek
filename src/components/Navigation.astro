@@ -31,59 +31,35 @@ const { path } = Astro.props as { path: string };
           >
         </li>
 
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-light"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Főételek
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            {
-              navItems.mainDishes.map((item) => (
-                <li>
-                  <a
-                    class={`dropdown-item${path === item.path ? ' active' : ''}`}
-                    {...(path === item.path && { 'aria-current': 'page' })}
-                    href={item.path}
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))
-            }
-          </ul>
-        </li>
+        {
+          navItems.map(({ name, items }) => (
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                {name}
+              </a>
 
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-light"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Desszertek
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            {
-              navItems.deserts.map((item) => (
-                <li>
-                  <a
-                    class={`dropdown-item${path === item.path ? ' active' : ''}`}
-                    {...(path === item.path && { 'aria-current': 'page' })}
-                    href={item.path}
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))
-            }
-          </ul>
-        </li>
+              <ul class="dropdown-menu dropdown-menu-end">
+                {items.map((item) => (
+                  <li>
+                    <a
+                      class={`dropdown-item${path === item.path ? ' active' : ''}`}
+                      {...(path === item.path && { 'aria-current': 'page' })}
+                      href={item.path}
+                    >
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))
+        }
       </ul>
     </div>
   </div>
