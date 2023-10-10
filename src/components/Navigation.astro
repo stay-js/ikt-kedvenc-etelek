@@ -24,7 +24,11 @@ const { path } = Astro.props as Props;
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class={`nav-link text-light${path === '' ? ' active' : ''}`} href="/">Főoldal</a>
+          <a
+            class={`nav-link text-light${path === '' ? ' active' : ''}`}
+            {...path === '' && { 'aria-current': 'page' }}
+            href="/">Főoldal</a
+          >
         </li>
 
         <li class="nav-item dropdown">
@@ -41,18 +45,21 @@ const { path } = Astro.props as Props;
             <li>
               <a
                 class={`dropdown-item${path === '/foetelek/milanoi-makaroni' ? ' active' : ''}`}
+                {...path === '/foetelek/milanoi-makaroni' && { 'aria-current': 'page' }}
                 href="/foetelek/milanoi-makaroni">Milánói makaróni</a
               >
             </li>
             <li>
               <a
                 class={`dropdown-item${path === '/foetelek/roston-csirkemell' ? ' active' : ''}`}
+                {...path === '/foetelek/roston-csirkemell' && { 'aria-current': 'page' }}
                 href="/foetelek/roston-csirkemell">Roston csirkemell, rizs, tzatziki</a
               >
             </li>
             <li>
               <a
                 class={`dropdown-item${path === '/foetelek/roston-csirkemell' ? ' active' : ''}`}
+                {...path === '/foetelek/kijevi-csirkemell' && { 'aria-current': 'page' }}
                 href="/foetelek/kijevi-csirkemell">Kijevi csirkemell</a
               >
             </li>
@@ -75,18 +82,21 @@ const { path } = Astro.props as Props;
                 class={`dropdown-item${
                   path === '/desszertek/voros-barsony-torta' ? ' active' : ''
                 }`}
+                {...path === '/desszertek/voros-barsony-torta' && { 'aria-current': 'page' }}
                 href="/desszertek/voros-barsony-torta">Vörös bársony torta</a
               >
             </li>
             <li>
               <a
                 class={`dropdown-item${path === '/desszertek/joghurt' ? ' active' : ''}`}
+                {...path === '/desszertek/joghurt' && { 'aria-current': 'page' }}
                 href="/desszertek/joghurt">Joghurt</a
               >
             </li>
             <li>
               <a
                 class={`dropdown-item${path === '/desszertek/almas-pite' ? ' active' : ''}`}
+                {...path === '/desszertek/almas-pite' && { 'aria-current': 'page' }}
                 href="/desszertek/almas-pite">Almás pite</a
               >
             </li>
