@@ -1,4 +1,6 @@
 ---
+import { navItems } from '~/constants/navItems';
+
 type Props = {
   path: string;
 };
@@ -42,27 +44,19 @@ const { path } = Astro.props as Props;
             Főételek
           </a>
           <ul class="dropdown-menu dropdown-menu-end">
-            <li>
-              <a
-                class={`dropdown-item${path === '/foetelek/milanoi-makaroni' ? ' active' : ''}`}
-                {...path === '/foetelek/milanoi-makaroni' && { 'aria-current': 'page' }}
-                href="/foetelek/milanoi-makaroni">Milánói makaróni</a
-              >
-            </li>
-            <li>
-              <a
-                class={`dropdown-item${path === '/foetelek/roston-csirkemell' ? ' active' : ''}`}
-                {...path === '/foetelek/roston-csirkemell' && { 'aria-current': 'page' }}
-                href="/foetelek/roston-csirkemell">Roston csirkemell, rizs, tzatziki</a
-              >
-            </li>
-            <li>
-              <a
-                class={`dropdown-item${path === '/foetelek/kijevi-csirkemell' ? ' active' : ''}`}
-                {...path === '/foetelek/kijevi-csirkemell' && { 'aria-current': 'page' }}
-                href="/foetelek/kijevi-csirkemell">Kijevi csirkemell</a
-              >
-            </li>
+            {
+              navItems.mainDishes.map((item) => (
+                <li>
+                  <a
+                    class={`dropdown-item${path === item.path ? ' active' : ''}`}
+                    {...(path === item.path && { 'aria-current': 'page' })}
+                    href={item.path}
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </li>
 
@@ -77,29 +71,19 @@ const { path } = Astro.props as Props;
             Desszertek
           </a>
           <ul class="dropdown-menu dropdown-menu-end">
-            <li>
-              <a
-                class={`dropdown-item${
-                  path === '/desszertek/voros-barsony-torta' ? ' active' : ''
-                }`}
-                {...path === '/desszertek/voros-barsony-torta' && { 'aria-current': 'page' }}
-                href="/desszertek/voros-barsony-torta">Vörös bársony torta</a
-              >
-            </li>
-            <li>
-              <a
-                class={`dropdown-item${path === '/desszertek/joghurt' ? ' active' : ''}`}
-                {...path === '/desszertek/joghurt' && { 'aria-current': 'page' }}
-                href="/desszertek/joghurt">Joghurt</a
-              >
-            </li>
-            <li>
-              <a
-                class={`dropdown-item${path === '/desszertek/almas-pite' ? ' active' : ''}`}
-                {...path === '/desszertek/almas-pite' && { 'aria-current': 'page' }}
-                href="/desszertek/almas-pite">Almás pite</a
-              >
-            </li>
+            {
+              navItems.deserts.map((item) => (
+                <li>
+                  <a
+                    class={`dropdown-item${path === item.path ? ' active' : ''}`}
+                    {...(path === item.path && { 'aria-current': 'page' })}
+                    href={item.path}
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </li>
       </ul>
