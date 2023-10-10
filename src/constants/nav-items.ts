@@ -7,7 +7,7 @@ export const navItems = [
         path: '/foetelek/milanoi-makaroni',
         image: '/images/milanoi-makaroni.jpg',
         description:
-          'Izlese, fűszeres, pardicsomos darált hús áldentére főtőt makaróni ágyon, érlelt reszelt parmezán sajtal dízítet!',
+          'Ízletes, fűszeres, pardicsomos darált hús áldentére főzöt makaróni ágyon, érlelt reszelt parmezán sajtal díszítve.',
       },
       {
         name: 'Roston csirkemell, rizs, tzatziki',
@@ -21,7 +21,7 @@ export const navItems = [
         path: '/foetelek/kijevi-csirkemell',
         image: '/images/kijevi-csirkemell.png',
         description:
-          'A Kijevi csirkemell egy híres és ízletes étel. Ez az étel egy különleges csirkemell töltelékéből áll, amelyet ropogós bundába burkolnak, majd sütnek.',
+          'A kijevi csirkemell egy híres és ízletes étel. Ez az étel egy különleges csirkemell töltelékéből áll, amelyet ropogós bundába burkolnak, majd sütnek.',
       },
     ],
   },
