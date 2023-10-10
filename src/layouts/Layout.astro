@@ -6,7 +6,7 @@ import Footer from '~/components/Footer.astro';
 import '../styles/globals.css';
 
 const { path, title, description, keywords } = Astro.props as {
-  path?: string;
+  path: string;
   title: string;
   description: string;
   keywords?: string;
@@ -28,7 +28,9 @@ const { path, title, description, keywords } = Astro.props as {
 
     <meta
       name="keywords"
-      content={`bmszc neumann jános informatikai technikum, njit, njszg, njszki, ikt, html, css, bootstrap, school, school project, food, favorite food, étel, kedvenc étel, recept, recipe, ${keywords}`}
+      content={`bmszc neumann jános informatikai technikum, njit, njszg, njszki, ikt, html, css, bootstrap, school, school project, food, favorite food, étel, kedvenc étel, recept, recipe${
+        keywords ? `, ${keywords}` : ''
+      }`}
     />
 
     <meta name="theme-color" content="#0d9488" />
