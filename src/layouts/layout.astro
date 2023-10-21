@@ -3,7 +3,7 @@ import { ViewTransitions } from 'astro:transitions';
 import Navigation from '~/components/navigation.astro';
 import Footer from '~/components/footer.astro';
 
-import '../styles/globals.css';
+import '~/styles/globals.css';
 
 const { path, title, description, keywords } = Astro.props as {
   path: string;
@@ -28,7 +28,7 @@ const { path, title, description, keywords } = Astro.props as {
 
     <meta
       name="keywords"
-      content={`bmszc neumann jános informatikai technikum, njit, njszg, njszki, ikt, html, css, bootstrap, school, school project, food, favorite food, étel, kedvenc étel, recept, recipe${
+      content={`bmszc neumann jános informatikai technikum, njit, njszg, njszki, ikt, astro, css, bootstrap, school, school project, food, favorite food, étel, kedvenc étel, recept, recipe${
         keywords ? `, ${keywords}` : ''
       }`}
     />
@@ -75,7 +75,7 @@ const { path, title, description, keywords } = Astro.props as {
 
   <body>
     <div>
-      <Navigation path={path} />
+      <Navigation path={path} transition:persist />
       <slot />
     </div>
 
