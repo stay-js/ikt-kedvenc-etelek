@@ -4,6 +4,28 @@
 
 Készítette: Bottka Balázs, K.Papp Benjámin és [Nagy Zétény](https://znagy.hu)
 
+## Telepítés:
+
+[Node.js](https://nodejs.org/en) minimum `18.0.0` verzió szükséges a projekt futtatásához.
+
+### PNPM telepítése:
+
+```bash
+npm install -g pnpm
+```
+
+### Függőségek telepítése:
+
+```bash
+pnpm install
+```
+
+### Dev szerver indítása:
+
+```bash
+pnpm dev
+```
+
 ## Linkek:
 
 - [Oldal elérése](https://kedvenc-etelek.znagy.hu)
