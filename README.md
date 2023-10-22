@@ -34,7 +34,7 @@ pnpm dev
 ## Oldal elkészítéséheez használt technológiák:
 
 - [Astro](https://astro.build)
-- CSS
+- [Sass/SCSS](https://sass-lang.com)
 - [Bootstrap 5](https://getbootstrap.com)
 - [GitHub](https://github.com)
 - [Netlify](https://www.netlify.com)
