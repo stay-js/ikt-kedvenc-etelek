@@ -5,15 +5,15 @@ import { navItems } from '~/constants/nav-items';
 
 <Layout path="" title="Kezdőlap" description="Kedvenc ételek - IKT Projektmunka">
   <main class="container">
-    <div class="row" transition:name="title">
+    <div class="row pt-5">
       <div class="col-12">
-        <h1 class="text-center mt-5">Kedvenc ételek</h1>
+        <h1 class="text-center">Kedvenc ételek</h1>
       </div>
     </div>
 
     {
       navItems.map(({ name, items }) => (
-        <section class="row pt-5 row-gap-3">
+        <section class="row pt-5">
           <div class="col-12">
             <h2 class="mb-0">{name}:</h2>
           </div>
@@ -21,12 +21,12 @@ import { navItems } from '~/constants/nav-items';
             <div class="col-lg-4">
               <div class="card h-100">
                 <img src={image} class="card-img-top" alt={name} />
-                <div class="card-body d-flex justify-content-between flex-column">
+                <div class="card-body d-flex justify-content-between flex-column row-gap-3">
                   <div>
                     <h3 class="card-title fs-5">{name}</h3>
                     <p class="card-text">{description}</p>
                   </div>
-                  <a href={path} class="btn mt-3">
+                  <a href={path} class="btn">
                     Tovább
                   </a>
                 </div>
